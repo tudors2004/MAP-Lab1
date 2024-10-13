@@ -15,34 +15,20 @@ public class Aufgabe3 {
             for (int i = 0; i < a.length; i++) {
                 newResult[i] = result[i + 1];
             }
-
             return newResult;
         }
         return result;
     }
 
-    public static int[] subtract(int[] a, int[] b) {
-        int[] result = new int[a.length];
-        int borrow = 0;
-
-        for (int i = a.length - 1; i >= 0; i--) {
-            int diff = a[i] - b[i] - borrow;
-            if (diff < 0) {
-                diff += 10;
-                borrow = 1;
-            } else {
-                borrow = 0;
-            }
-            result[i] = diff;
-        }
-        return result;
-    }
-
-
     public static int[] multiply(int[] num, int factor) {
         int[] result = new int[num.length + 1];
         int carry = 0;
-
+        for (int i = num.length - 1; i >= 0; i--) {
+            int produs = num[i] * factor + carry;
+            result[i + 1] = produs % 10;
+            carry = produs / 10;
+        }
+        result[0] = carry;
 
         if(result[0] == 0){
             int[] newResult = new int[num.length];
@@ -54,11 +40,15 @@ public class Aufgabe3 {
         return result;
     }
 
+
+    public static int[] subtract(int[] a, int[] b) {
+        int[] result = new int[a.length];
+        int borrow = 0;
+        return result;
+    }
     public static int[] divide(int[] num, int divisor) {
         int[] result = new int[num.length];
         int remainder = 0;
         return result;
     }
-
-
 }

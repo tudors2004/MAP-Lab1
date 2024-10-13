@@ -3,11 +3,11 @@ public class Main {
     public static void main(String[] args) {
         int[] grades = {29, 37, 38, 41, 84, 67};
         int[] insufficientGrades = Aufgabe1.getInsufficientGrades(grades);
-        System.out.print("Note insuficiente: ");
-        for(int i = 0; i < insufficientGrades.length; i++){
-            System.out.print(insufficientGrades[i] + " ");
-        }
-        System.out.println();
+        System.out.println("Note insuficiente: " + Arrays.toString(insufficientGrades));
+//        for(int i = 0; i < insufficientGrades.length; i++){
+//            System.out.print(insufficientGrades[i] + " ");
+//        }
+//        System.out.println();
 
         double mean = Aufgabe1.calculateMean(grades);
         System.out.println("Media: " + mean);
