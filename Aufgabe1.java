@@ -16,11 +16,11 @@ public class Aufgabe1 {
         return insufficientGrades;
     }
     public static double calculateMean(int[] grades) {
-        int sum = 0;
+        double sum = 0;
         for (int grade : grades) {
             sum += grade;
         }
-        return Math.round((double) sum / grades.length * 100.0) / 100.0;
+        return Math.round(sum / grades.length * 100.0) / 100.0;
     }
     public static int[] roundGrades(int[] grades){
         int[] roundedGrades = new int[grades.length];

@@ -18,6 +18,7 @@ public class Main {
         int maxGrade = Aufgabe1.getMaxGrade(grades);
         System.out.println("Nota maxima rotunjita: " + maxGrade);
 
+        //Aufgabe2
         int maxNum = Aufgabe2.findMax(grades);
         System.out.println("Nr max: " + maxNum);
 
@@ -30,6 +31,7 @@ public class Main {
         int minSum = Aufgabe2.findMinSum(grades);
         System.out.println("Suma minima: " + minSum);
 
+        //Aufgabe3
         int[] a = {1, 3, 0, 0, 0, 0, 0, 0, 0};
         int[] b = {8, 7, 0, 0, 0, 0, 0, 0, 0};
 
@@ -48,6 +50,7 @@ public class Main {
         int[] divide = Aufgabe3.divide(e, 2);
         System.out.println(Arrays.toString(divide));
 
+        //Aufgabe4
         int[] keyboards = {10, 20, 30};
         int[] USBs = {4, 6};
         int budget = 30;
