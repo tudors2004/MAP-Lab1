@@ -9,14 +9,6 @@ public class Aufgabe3 {
             carry = sum / 10;
         }
         result[0] = carry;
-
-        if(result[0] == 0){
-            int[] newResult = new int[a.length];
-            for (int i = 0; i < a.length; i++) {
-                newResult[i] = result[i + 1];
-            }
-            return newResult;
-        }
         return result;
     }
 
