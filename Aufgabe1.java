@@ -30,12 +30,7 @@ public class Aufgabe1 {
                 if(grade % 5 == 0){
                     roundedGrades[i] = grade;
                 }
-//                else if(grade % 5 < 2.5){
-//                    grade = grade - grade % 5;
-//                }
-//                else{
-//                    grade = grade + (5 - grade % 5);
-//                }
+
                 int multiplu = ((grade / 5) + 1) * 5;
                 if (multiplu - grade < 3) {
                     grade = multiplu;
